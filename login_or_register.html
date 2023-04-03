@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login / Registration Form</title>
+    <link rel="stylesheet" href="css/logins.css">
+  </head>
+  <body>
+    <header>
+      <!-- Add a logo or other branding here -->
+    </header>
+    <nav>
+      <ul class="nav-pills">
+        <li class="active"><a href="#login-form">Login</a></li>
+        <li><a href="#register-form">Register</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <form id="login-form">
+        <h2>Login Form</h2>
+		<form method="post" action="login.php">
+			<label>Username:</label>
+			<input type="text" name="username" required><br><br>
+			<label>Password:</label>
+			<input type="password" name="password" required><br><br>
+			<input type="submit" name="submit" value="Login">
+            <div class="signup-link">
+			Don't have an account? <a href="register.php">Sign up</a>
+		</div>
+      </form>
+      <form id="register-form" style="display: none;">
+        <h2>Registration Form</h2>
+		<form method="post" action="register.php">
+			<label>Username:</label>
+			<input type="text" name="username" required><br><br>
+			<label>Email:</label>
+			<input type="email" name="email" required><br><br>
+			<label>Password:</label>
+			<input type="password" name="password" required><br><br>
+			<input type="submit" name="submit" value="Register">
+		</form>
+      </form>
+    </div>
+  <script src="js/main.js"></script>
+  </body>
+</html>

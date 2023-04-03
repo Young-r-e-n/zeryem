@@ -1,0 +1,134 @@
+/* Set box-sizing property for all elements */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the navbar pills */
+  .nav-pills {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-pills li {
+    margin: 0 10px;
+  }
+  
+  .nav-pills a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #333;
+  }
+  
+  .nav-pills .active a {
+    background-color: indigo;
+    color: #fff;
+  }
+  
+  /* Style the container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the forms */
+  form {
+    margin-top: 50px;
+  }
+  
+  form h2 {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #333;
+  }
+  
+  form input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Style the signup link */
+  .signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .nav-pills {
+      flex-direction: column;
+    }
+  
+    .nav-pills li {
+      margin: 10px 0;
+    }
+  
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"],
+    form input[type="submit"] {
+      width: auto;
+    }
+  }
+  form {
+    max-width: 400px; /* Change this value to adjust the maximum width of the form */
+    margin: 0 auto;
+  }  
+
+  form input[type="submit"] {
+    display: block;
+    margin: 0 auto; /* Add this line to center the button horizontally */
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: indigo;
+    color: #fff;
+    cursor: pointer;
+  }

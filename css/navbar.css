@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212529;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  display: none;
+  z-index: -1;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.navbar-nav li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.navbar-nav li.cart {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav li.cart i {
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: #212529;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-collapse.show {
+  display: block;
+  z-index: 2;
+}
